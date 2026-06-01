@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Générateur de lettres</title>
+</head>
+<body>
+
+<h1>Générateur de lettres gratuites</h1>
+
+<input id="nom" placeholder="Votre nom">
+
+<button onclick="generer()">
+Générer
+</button>
+
+<textarea id="resultat" rows="10" cols="50"></textarea>
+
+<script>
+function generer(){
+const nom=document.getElementById("nom").value;
+
+document.getElementById("resultat").value=
+`Madame, Monsieur,
+
+Je vous écris concernant ma demande.
+
+Cordialement,
+
+${nom}`;
+}
+</script>
+
+</body>
+</html>
